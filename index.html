@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dịch Vụ MXH - nmdmxh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">nmdmxh</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#services" class="hover:text-green-600">Dịch Vụ</a>
+        <a href="#courses" class="hover:text-green-600">Khóa Học</a>
+        <a href="#contact" class="hover:text-green-600">Liên Hệ</a>
+      </nav>
+      <!-- Mobile button -->
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden flex-col space-y-4 bg-white shadow-md px-6 py-4 md:hidden">
+      <a href="#services" class="hover:text-green-600">Dịch Vụ</a>
+      <a href="#courses" class="hover:text-green-600">Khóa Học</a>
+      <a href="#contact" class="hover:text-green-600">Liên Hệ</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-16 bg-gradient-to-r from-green-100 to-blue-100 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Dịch Vụ MXH & Khóa Học</h2>
+    <p class="text-lg text-gray-600 mb-6">Nâng tầm kiến thức - Bứt phá thành công cùng nmdmxh</p>
+    <a href="#services" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">Khám Phá Ngay</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-center mb-12">Dịch Vụ Mạng Xã Hội</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3">TUT Dame Facebook</h4>
+        <p class="text-gray-600 mb-4">Cung cấp kiến thức và tool hỗ trợ report Facebook.</p>
+        <span class="text-green-600 font-bold">499.000đ</span>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3">TUT Unlock Facebook</h4>
+        <p class="text-gray-600 mb-4">Giải pháp mở khóa acc bị checkpoint nhanh chóng.</p>
+        <span class="text-green-600 font-bold">670.000đ</span>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3">Full Dịch Vụ MXH</h4>
+        <p class="text-gray-600 mb-4">Gói tổng hợp tất cả dịch vụ mạng xã hội.</p>
+        <span class="text-green-600 font-bold">1.990.000đ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Khóa Học Quảng Cáo</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-xl font-semibold mb-3">Facebook Ads</h4>
+          <p class="text-gray-600 mb-4">Từ cơ bản đến nâng cao, giúp bạn tối ưu quảng cáo.</p>
+          <span class="text-green-600 font-bold">8.800.000đ</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="text-xl font-semibold mb-3">TikTok Ads</h4>
+          <p class="text-gray-600 mb-4">Xây dựng kênh và chiến lược chạy quảng cáo TikTok.</p>
+          <span class="text-green-600 font-bold">5.500.000đ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto px-6 py-16 text-center">
+    <h3 class="text-3xl font-bold mb-6">Liên Hệ</h3>
+    <p class="mb-4">Kết nối ngay với nmdmxh để được tư vấn nhanh nhất!</p>
+    <a href="https://zalo.me/0978809934" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Liên Hệ Zalo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>© 2025 nmdmxh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
